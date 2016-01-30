@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/font1.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/canvas.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="menu">
+        <li class="parent hasson">
+            <div data-r="wenjian" title="文件"></div>
+            <ul class="son file">
+                <li data-r="xinjian" title="新建"></li>
+                <li data-r="baocun"  title="保存"></li>
+                <li data-r="fanghui"  title="返回"></li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div data-r="gongju" title="画图"></div>
+            <ul class="son">
+                <li data-role="line" data-r="zhixian" title="线"></li>
+                <li data-role="rect" data-r="juxing" title="矩形"></li>
+                <li data-role="arc" data-r="yuan" title="圆"></li>
+                <li data-role="pen" data-r="qianbi" title="铅笔"></li>
+                <li data-role="five" data-r="wujiaoxin" title="五角星"></li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div data-r="leixing" title="类型"></div>
+            <ul class="son">
+                <li data-r="kongxin" data-rol="stroke" title="画线"></li>
+                <li data-r="shixin"  data-rol="fill" title="填充"></li>
+            </ul>
+        </li>
+        <li  class="parent">
+            <div tittle="线条颜色" class="bgcolor"><input type="color"></div>
+        </li>
+        <li  class="parent">
+            <div tittle=填充颜色" class="borderColor"><input type="color"></div>
+        </li>
+        <li  class="parent hasson">
+            <div data-r="xiantiao" title="线条"></div>
+            <ul class="son">
+                <li data-r="cuxian" title="特粗" xiantiao="10"></li>
+                <li data-r="cu" title="粗" xiantiao="5"></li>
+                <li data-r="xixian" title="细" xiantiao="1"></li>
+            </ul>
+        </li>
+        <li  class="parent hasson">
+            <div data-r="xianpi" title="橡皮"></div>
+            <ul class="son xpsize">
+                <li data-role="6">小</li>
+                <li data-role="35">中</li>
+                <li data-role="65">大</li>
+            </ul>
+        </li>
+        <li  class="parent">
+            <div data-r="xuanze" title="选择" class="select"></div>
+        </li>
+    </ul>
+    <div class="box">
+        <div class="copy"></div>
+        <canvas></canvas>
+        <div class="xp"></div>
+        <div class="selectarea"></div>
+    </div>
+</div>
+
+</body>
+</html>
